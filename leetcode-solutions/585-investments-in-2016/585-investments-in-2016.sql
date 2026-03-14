@@ -12,3 +12,6 @@ SELECT
     ROUND(SUM(tiv_2016)::numeric, 2) AS tiv_2016
 FROM
     CheckedRows
+WHERE
+    tiv_2015_count > 1
+    AND loc_count = 1
